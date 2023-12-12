@@ -64,9 +64,9 @@ void Roster::remove(string studentID)
 void Roster::printAll()
 {
 	Student::printHeader();
-	for (int i = 0; i <= Roster::lastIndex; i++) {
+	for (int i = 0; i < numStudent; i++) {
 		if (classRosterArray[i] != nullptr) {
-			classRosterArray[i]->print();
+			classRosterArray[i]->Student::print();
 		}
 	}
 }
