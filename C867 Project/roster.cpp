@@ -65,15 +65,9 @@ void Roster::printAll()
 {
 	Student::printHeader();
 	for (int i = 0; i <= Roster::lastIndex; i++) {
-		cout << classRosterArray[i]->getID(); cout << '\t';
-		cout << classRosterArray[i]->getFirstName(); cout << '\t';
-		cout << classRosterArray[i]->getLastName(); cout << '\t';
-		cout << classRosterArray[i]->getEmail(); cout << '\t';
-		cout << classRosterArray[i]->getAge(); cout << '\t';
-		cout << classRosterArray[i]->getTotalDays()[0]; cout << '\t';
-		cout << classRosterArray[i]->getTotalDays()[1]; cout << '\t';
-		cout << classRosterArray[i]->getTotalDays()[2]; cout << '\t';
-		cout << DegreeProgramStrings[classRosterArray[i]->getDegreeProgram()] << std::endl;
+		if (classRosterArray[i] != nullptr) {
+			classRosterArray[i]->print();
+		}
 	}
 }
 
