@@ -7,7 +7,7 @@ private:
 	const static int numStudent = 5;
 
 public:
-	Student* classRosterArray[numStudent];
+	Student* classRosterArray[numStudent] = { nullptr, nullptr, nullptr, nullptr, nullptr };
 	void parse(string row); /* PARSE METHOD */
 	void add(string studentID, /* PASSES STUDENT DATA INTO ADD METHOD WHICH CREATES THE STUDENT METHOD */
 		string firstName,
