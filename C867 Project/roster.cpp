@@ -60,7 +60,7 @@ void Roster::remove(string studentID)
 }
 
 
-/* DISPLAYS ALL STUDENTS USING TAB SEPERATED OUTPUT */
+/* DISPLAYS ALL STUDENTS */
 void Roster::printAll()
 {
 	Student::printHeader();
